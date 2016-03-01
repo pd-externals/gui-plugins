@@ -16,7 +16,14 @@ new object.
 Allows you to drag'n'drop text onto a patch to instantiate it as comments.
 
 # INSTALLATION
-just copy the *.tcl files into ~/pd-externals/
+just copy the `*.tcl` files into your Pd-startup folder:
+
+
+ - Linux `~/pd-externals/`
+ - OSX  `~/Library/Pd/`
+ - Windows `%AppData%\Pd\`
+
+
 they will be automatically used, the next time you start Pd
 
 ## PREREQUISITES
@@ -24,9 +31,9 @@ gui-plugins only work with Pd>=0.43
 
 
 # AUTHORS
-IOhannes m zmölnig
-Patrice Colet
-Hans-Christoph Steiner
+- IOhannes m zmölnig
+- Patrice Colet
+- Hans-Christoph Steiner
 
 # LICENSE
 This is released under a 3-clause BSD license.
