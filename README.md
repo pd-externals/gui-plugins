@@ -25,3 +25,13 @@ render a Pd-patch as SVG
 ## more info
 please consult the README (and LICENSE) files within the various plugin folders
 for instructions on how to install and use the resp. plugin.
+
+# CONTRIBUTING
+
+if you would like to contribute (e.g. you want to have your cool plugin included
+either directly of via a `git submodule`; or you want to fix a bug; or you want
+to request a new plugin/feature/...), please get in contact with us.
+
+- [Pd-list](http://lists.puredata.info)
+- [GitHub ticket](https://github.com/pure-data/gui-plugins/issues)
+- we are also happy to accept pull-requests on github.
