@@ -1,3 +1,11 @@
+# META NAME drop-patch
+# META DESCRIPTION drop patch-files onto patches to create objects
+# META DESCRIPTION drop patch-files onto Pd-console to open patches
+
+# META AUTHOR IOhannes m zmölnig <zmoelnig@iem.at>
+# META AUTHOR Patrice Colet <colet.patrice@free.fr>
+# META AUTHOR Hans-Christoph Steiner <eighthave@users.sourceforge.net>
+
 package require tkdnd
 
 namespace eval ::dnd_object_create {
