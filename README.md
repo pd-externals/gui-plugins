@@ -26,6 +26,29 @@ render a Pd-patch as SVG
 please consult the README (and LICENSE) files within the various plugin folders
 for instructions on how to install and use the resp. plugin.
 
+# Prerequisites
+GUI plugins only work with Pd>=0.43.
+
+See the plugin's README for more detailed dependencies.
+
+# Installation
+These are only generic installation instructions.
+For plugin specific instructions see the documentation that is bundled with the
+plugin in question.
+
+In general it is enough to copy the entire plugin directory (if the
+directory name ends with `-plugin`) of (in case of small single-file plugins)
+the `*-plugin.tcl` file into your Pd startup folder.
+
+The Pd startup folder is system dependent:
+
+ * Linux = `~/pd-externals/deken-plugin/` (`~` being your Home-directory)
+ * OSX = `~/Library/Pd/deken-plugin/` (`~` being your Home-directory)
+ * Windows = `%AppData%\Pd\deken-plugin\` (type `%AppData%` into the
+   file-location bar of the *Windows Explorer* to see the actual value of this
+   variable)
+
+
 # CONTRIBUTING
 
 if you would like to contribute (e.g. you want to have your cool plugin included
