@@ -26,7 +26,9 @@ proc ::text_on_patch::setxy {newx newy} {
 proc ::text_on_patch::make_comments {mytoplevel text} {
     variable x
     variable y
-    pdwindow::error "::text_on_patch::make_comments $mytoplevel text $x $y"
+    set posx [expr $x - [winfo rootx $mytoplevel]]
+    set posy [expr $y - [winfo rooty $mytoplevel]]
+    #pdwindow::error "::text_on_patch::make_comments $mytoplevel text $posx $posy\n"
     foreach line [split [regsub {\\\;} $text {}] "\n"] {
         if {$line ne ""} {
             pdsend "$mytoplevel text $x $y $line"
