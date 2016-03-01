@@ -12,7 +12,7 @@ bind PatchWindow <<Loaded>> {+::text_on_patch::bind_to_dropped_text %W}
 
 proc ::text_on_patch::bind_to_dropped_text {mytoplevel} {
     ::tkdnd::drop_target register $mytoplevel DND_Text
-    bind $mytoplevel <<DropPosition>> {::text_on_patch::setxy %X %Y}
+    bind $mytoplevel <<DropPosition>> {+::text_on_patch::setxy %X %Y}
     bind $mytoplevel <<Drop:DND_Text>> {::text_on_patch::make_comments %W %D}
     # TODO bind to DropEnter and DropLeave to make window visually show whether it will accept the drop or not
 }

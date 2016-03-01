@@ -18,7 +18,7 @@ namespace eval ::dnd_object_create {
 
 proc ::dnd_object_create::bind_to_canvas {mytoplevel} {
     ::tkdnd::drop_target register $mytoplevel DND_Files
-    bind $mytoplevel <<DropPosition>> {::dnd_object_create::setxy %X %Y}
+    bind $mytoplevel <<DropPosition>> {+::dnd_object_create::setxy %X %Y}
     bind $mytoplevel <<Drop:DND_Files>> {::dnd_object_create::dropped_object_files %W %D}
 }
 
