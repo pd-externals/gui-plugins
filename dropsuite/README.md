@@ -3,7 +3,7 @@ Drag'n'Drop for Pure Data
 
 plugins to enable drag'n'drop for Pd
 
-# acailable plugins
+# available plugins
 
 ## drop-patch-plugin
 
