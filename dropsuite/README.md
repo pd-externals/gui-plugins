@@ -37,4 +37,4 @@ gui-plugins only work with Pd>=0.43
 
 # LICENSE
 This is released under a 3-clause BSD license.
-See LICENSE.md for details.
+See [LICENSE.md](LICENSE.md) for details.
