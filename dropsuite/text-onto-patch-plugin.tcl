@@ -31,9 +31,9 @@ proc ::text_on_patch::make_comments {mytoplevel text} {
     #pdwindow::error "::text_on_patch::make_comments $mytoplevel text $posx $posy\n"
     foreach line [split [regsub {\\\;} $text {}] "\n"] {
         if {$line ne ""} {
-            pdsend "$mytoplevel text $x $y $line"
-            set y [expr $y + 20]
+            pdsend "$mytoplevel text $posx $posy $line"
         }
+        set posy [expr $posy + 20]
     }
     return "copy"
 }
