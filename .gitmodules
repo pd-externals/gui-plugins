@@ -1,0 +1,6 @@
+[submodule "patch2svg-plugin"]
+	path = patch2svg-plugin
+	url = https://github.com/iem-projects/patch2svg-plugin.git
+[submodule "tclprompt-plugin"]
+	path = tclprompt-plugin
+	url = https://git.iem.at/pd-gui/tclprompt-plugin.git
